@@ -50,7 +50,7 @@ public class DAO {
 		try {  
 			Statement st = conexao.createStatement();
 			st.executeUpdate("INSERT INTO produto (codigo, nome, preco, estoque) "
-					       + "VALUES ("+produto.getCodigo()+ ", '" + produtp.getNome() + "', '"  
+					       + "VALUES ("+produto.getCodigo()+ ", '" + produto.getNome() + "', '"  
 					       + produto.getPreco() + "', '" + produto.getEstoque() + "');");
 			st.close();
 			status = true;
@@ -91,7 +91,7 @@ public class DAO {
 	
 	
 	public Produto[] getProdutos() {
-		Usuario[] usuarios = null;
+		Produto[] produtos = null;
 		
 		try {
 			Statement st = conexao.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
