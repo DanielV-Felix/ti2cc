@@ -22,8 +22,7 @@ public class Principal {
 
 		//Mostrar produto do sexo masculino
 		System.out.println("==== Mostrar produtos === ");
-		Produto[] produtos = new Produto;
-		produtos = dao.getProdutos();
+		Produto[] produtos = dao.getProdutos();
 		for(int i = 0; i < produtos.length; i++) {
 			System.out.println(produtos[i].toString());
 		}
@@ -32,7 +31,7 @@ public class Principal {
 		dao.excluirProduto(produto.getCodigo());
 		
 		//Mostrar produto
-		produtos = dao.getProduto();
+		produtos = dao.getProdutos();
 		System.out.println("==== Mostrar produtos === ");		
 		for(int i = 0; i < produtos.length; i++) {
 			System.out.println(produtos[i].toString());
