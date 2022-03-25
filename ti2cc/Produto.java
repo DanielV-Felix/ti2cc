@@ -7,10 +7,10 @@ public class Produto {
 	private int estoque;
 	
 	public Produto() {
-		private int codigo = 0;
-		private String nome = "";
-		private double preco = 0.0;
-		private int estoque = 0;
+		this.codigo = 0;
+		this.nome = "";
+		this.preco = 0.0;
+		this.estoque = 0;
 	}
 	
 	public Produto(int codigo, String nome, double preco, int estoque) {
@@ -32,7 +32,7 @@ public class Produto {
 		return nome;
 	}
 
-	public void setNome(String preco) {
+	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
